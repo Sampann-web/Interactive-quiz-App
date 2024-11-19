@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Quiz App">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="stylen.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Interactive Quiz App</h1>
+        <div id="question-container">
+            <!-- Questions will be dynamically injected here -->
+        </div>
+
+        <div id="navigation">
+            <button id="prev-btn" onclick="showPrevQuestion()">Previous</button>
+            <button id="next-btn" onclick="showNextQuestion()">Next</button>
+        </div>
+        <button id="submit-btn" onclick="showResults()">Submit Quiz</button>
+
+        <div id="result-container">
+            <p>Your score is: <span id="score"></span></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
